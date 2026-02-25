@@ -71,6 +71,45 @@ const products = [
     description:
       "1080p HD webcam with auto-focus and built-in microphone. Ideal for video calls and streaming.",
   },
+
+  {
+    id: 9,
+    name: "Portable Charger",
+    price: 5000.99,
+    image:
+      "https://images.unsplash.com/photo-1736513963979-90b024508341?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "High-capacity portable charger with fast charging technology. Keep your devices powered on the go.",
+    },
+    {
+    id: 10,
+    name: "Magnetic Phone Mount",
+    price: 29.99,
+    image:
+      "https://images.unsplash.com/photo-1601220363009-f7e66d095649?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "Magnetic phone mount for cars. Easy to install and holds your phone securely while driving.",
+    },
+    {
+    id: 11,
+    name: "Bluetooth Speaker",
+    price: 4303.99,
+    image:
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "Portable Bluetooth speaker with rich sound and deep bass. Perfect for outdoor gatherings and parties.",
+    },
+    {
+        id: 12,
+        name: "Electric Scooter",
+        price: 9999.99,
+        image:
+        "https://images.unsplash.com/photo-1654748646458-056253a82853?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        description:
+        "Eco-friendly electric scooter with a range of 20 miles and a top speed of 15 mph. Perfect for urban commuting.",
+    },    
+    
+
 ];
 
 export function getProducts() {
