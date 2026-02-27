@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext"
+import { formatMoney } from "../utils/helpers";
 
 export default function Checkout() {
     const { getCartItemsWithProducts, getCartTotal, clearCart, removeFromCart, updateQuantity } = useCart()
@@ -34,7 +35,7 @@ export default function Checkout() {
                                 <div className="checkout-item-details">
                                     <h3 className="checkout-item-name">{item.product.name}</h3>
                                     <p className="checkout-item-price">
-                                        &#8358; {item.product.price} each
+                                        {formatMoney(item.product.price, '&#8358;')} each
                                     </p>
                                 </div>
                                 <div className="checkout-item-controls">
@@ -49,7 +50,7 @@ export default function Checkout() {
                                     </div>
 
                                     <p className="checkout-item-total">
-                                        &#8358; {(item.product.price * item.quantity).toFixed(2)}
+                                        {formatMoney(item.product.price * item.quantity, '&#8358;')}
                                     </p>
                                     <button className="btn btn-secondary btn-small" onClick={() => removeFromCart(item.id)} >
                                         Remove
@@ -62,12 +63,14 @@ export default function Checkout() {
                         <h2 className="checkout-section-title">Total</h2>
                         <div className="checkout-total">
                             <p className="checkout-total-label">Subtotal:</p>
-                            <p className="checkout-total-value">${total.toFixed(2)}</p>
+                            <p className="checkout-total-value">
+                                {formatMoney(total, '&#8358;')}
+                            </p>
                         </div>
                         <div className="checkout-total">
                             <p className="checkout-total-label">Total:</p>
                             <p className="checkout-total-value checkout-total-final">
-                                &#8358; {total.toFixed(2)}
+                                {formatMoney(total, '&#8358;')}
                             </p>
                         </div>
                         <button
