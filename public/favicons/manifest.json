@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "React Ecommerce",
+    "short_name": "Ecommerce",
     "icons": [
         {
             "src": "/android-chrome-192.png",
