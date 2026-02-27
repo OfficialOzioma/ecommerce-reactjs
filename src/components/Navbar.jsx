@@ -5,7 +5,7 @@ import { useCart } from "../context/CartContext";
 export default function Navbar() {
     const { user, logout } = useAuth();
     const { cartItems } = useCart();
-    const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+    const cartItemCount = cartItems.length;
     const cartItemLabel = cartItemCount > 0 ? `Cart (${cartItemCount})` : "Cart";
     return (
         <nav className="navbar">
