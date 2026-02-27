@@ -67,7 +67,7 @@ export default function Checkout() {
                         <div className="checkout-total">
                             <p className="checkout-total-label">Total:</p>
                             <p className="checkout-total-value checkout-total-final">
-                                ${total.toFixed(2)}
+                                &#8358; {total.toFixed(2)}
                             </p>
                         </div>
                         <button

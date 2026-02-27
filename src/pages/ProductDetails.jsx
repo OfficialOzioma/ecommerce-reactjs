@@ -17,7 +17,7 @@ export default function ProductDetails() {
             return;
         }
         setProduct(fetchProduct);
-    }, [id]);
+    }, [id, navigate]);
 
     if (!product) {
         return <div>Loading...</div>;
