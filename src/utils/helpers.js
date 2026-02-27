@@ -14,6 +14,7 @@ export function formatMoney(amount, htmlSymbol = '&#8358;') {
   if (amount >= 1e9) return formatCompact(amount / 1e9, 'B');
   if (amount >= 1e6) return formatCompact(amount / 1e6, 'M');
   if (amount >= 1000000) return formatCompact(amount / 1000, 'K'); // Optional: triggers for 100k+
+//   if (amount >= 1e3) return formatCompact(amount / 1e3, 'K');
 
   // 3. Standard Comma Formatting for smaller numbers
   const options = {
